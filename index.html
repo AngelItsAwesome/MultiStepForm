@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="color"></div>
+    <div class="color"></div>
+    <main class="main">
+        <div class="main__bg">
+            <div id="map-0" class="main__content">
+                <header class="main__header">
+                    <h1>Register</h1>
+                </header>
+                <form class="main__form">
+                    <div class="main__camp">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="enter your name">
+                    </div>
+                    <div class="main__camp">
+                        <label for="email">Email</label>
+                        <input id="email" type="text"  placeholder="example@gmail.com">
+                    </div>
+                </form>
+            </div>
+
+            <div id="map-1" class="main__content hidden">
+                <header class="main__header">
+                    <h1>Which topics are you interested</h1>
+                </header>
+                <form class="main__form">
+                    <ul class="main__select">
+                        <li class="li">Software Development</li>
+                        <li class="li">User Experience</li>
+                        <li class="li">Graphic Design</li>
+                    </ul>
+                </form>
+            </div>
+
+            <div id="map-2" class="main__content hidden">
+                <header class="main__header">
+                    <h1>Summary</h1>
+                </header>
+                <div class="main__summary">
+                    <div class="summary__user">
+                        <h1>Name: <strong id="wUser" class="summary__user-strong"></strong></h1>
+                        <h1>Email: <strong id="wEmail" class="summary__user-strong"></strong></h1>
+                    </div>
+
+                    <div class="summary__topics">
+                        <h1 class="summary__th">Topics:</h1>
+                        <ul class="summary__info">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="map-3" class="main__content hidden">
+                <h1 style="text-align: center; color: white">✅ Success</h1>
+            </div>
+
+
+            <div class="btn">
+                <button id="btn" class="main__form-btn" type="submit">Continue</button>
+            </div>
+        </div>
+        <div class="main__dots">
+            <h3 id="btnStep">Step 1 of 3</h3>
+            <div class="dots__container">
+                <div class="btns active">
+                    <div class="main__dot main__dot-viewed"></div>
+                </div>
+                <div class="btns">
+                    <div class="main__dot"></div>
+                </div>
+                <div class="btns">
+                    <div class="main__dot"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="js.js"></script>
+</html>
